@@ -1,0 +1,43 @@
+<div class="d-flex flex-column flex-root" style="height: 100vh !important; background: #dfe1ef !important">
+  <!--begin::Login-->
+  <div class="login login-signin-on login-2 d-flex flex-row-fluid" id="kt_login">
+    <div class="d-flex flex-center bgi-size-cover bgi-no-repeat flex-row-fluid">
+      <div class="login-form text-center p-7 position-relative overflow-hidden" style="min-width: 380px !important">
+        <!--begin::Login Header-->
+        <div class="d-flex flex-center mb-15">
+          <a href="#">
+            <img src="assets/media/logos/logo-letter-9.png" class="max-h-100px" alt="" />
+          </a>
+        </div>
+        <!--end::Login Header-->
+        <!--begin::Login Sign in form-->
+        <div class="login-signin">
+          <div class="mb-20">
+            <h3>Panel administrador</h3>
+            <p class="opacity-60 font-weight-bold">
+              Ingresa tu cuenta de colaborador:
+            </p>
+          </div>
+          <form class="form fv-plugins-bootstrap fv-plugins-framework" id="kt_login_signin_form"
+            novalidate="novalidate">
+            <div class="form-group form-group mb-5 fv-plugins-icon-container">
+              <input class="form-control h-auto form-control-solid py-4 px-8" type="text" placeholder="Email"
+                name="email" [(ngModel)]="user.email" autocomplete="off" required />
+            </div>
+            <div class="form-group form-group mb-5 fv-plugins-icon-container">
+              <input class="form-control h-auto form-control-solid py-4 px-8" type="password" placeholder="Password"
+                name="password" [(ngModel)]="user.password" required />
+            </div>
+            <div class="form-group">
+              <button type="button" (click)="login()" id="kt_login_signin_submit"
+                class="btn btn-primary font-weight-bold px-9 py-4 my-3 mx-4">
+                Ingresar
+              </button>
+            </div>
+          </form>
+          <!--end::Login Sign in form-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

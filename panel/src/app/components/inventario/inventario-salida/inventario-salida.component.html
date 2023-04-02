@@ -1,0 +1,273 @@
+<div class="d-flex flex-column flex-root">
+  <div class="d-flex flex-row flex-column-fluid page">
+    <app-sidebar></app-sidebar>
+    <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
+      <app-top></app-top>
+      <!--begin::Content-->
+      <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+        <!--begin::Subheader-->
+        <div class="subheader py-2 py-lg-4 subheader-solid" id="kt_subheader">
+          <div class="container-fluid d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+            <!--begin::Info-->
+            <div class="d-flex align-items-center flex-wrap mr-2">
+              <!--begin::Page Title-->
+              <h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">Inventario</h5>
+              <!--end::Page Title-->
+              <!--begin::Actions-->
+              <div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"></div>
+              <ul class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm">
+                <li class="breadcrumb-item">
+                  <a [routerLink]="['/inventario/general']" class="text-muted">Listado del inventario</a>
+                </li>
+                <li class="breadcrumb-item active">
+                  <a class="text-muted">Salida</a>
+                </li>
+              </ul>
+              <!--end::Actions-->
+            </div>
+            <!--end::Info-->
+
+          </div>
+        </div>
+
+        <div class="d-flex flex-column-fluid">
+          <!--begin::Container-->
+          <div class="container">
+            <!--begin::Notice-->
+            <!--end::Notice-->
+            <!--begin::Card-->
+            <div class="card card-custom">
+              <div class="card-header flex-wrap border-0 pt-6 pb-0">
+                <div class="card-title">
+                  <h3 class="card-label">Inventario de salida
+                    <span class="text-muted pt-2 font-size-sm d-block">Esta sección es con el proposito de mostrar los
+                      productos salientes, ya sea por año o mes.</span>
+                  </h3>
+                </div>
+                <div class="card-toolbar">
+
+                  <a class="btn btn-light-success font-weight-bolder mr-2" [routerLink]="['/inventario/entrada']">
+                    <span
+                      class="svg-icon svg-icon-md"><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo1/dist/../src/media/svg/icons/Files/Downloads-folder.svg--><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                        height="24px" viewBox="0 0 24 24" version="1.1">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <rect x="0" y="0" width="24" height="24" />
+                          <path
+                            d="M3.5,21 L20.5,21 C21.3284271,21 22,20.3284271 22,19.5 L22,8.5 C22,7.67157288 21.3284271,7 20.5,7 L10,7 L7.43933983,4.43933983 C7.15803526,4.15803526 6.77650439,4 6.37867966,4 L3.5,4 C2.67157288,4 2,4.67157288 2,5.5 L2,19.5 C2,20.3284271 2.67157288,21 3.5,21 Z"
+                            fill="#000000" opacity="0.3" />
+                          <path
+                            d="M14.8875071,12.8306874 L12.9310336,12.8306874 L12.9310336,10.8230161 C12.9310336,10.5468737 12.707176,10.3230161 12.4310336,10.3230161 L11.4077349,10.3230161 C11.1315925,10.3230161 10.9077349,10.5468737 10.9077349,10.8230161 L10.9077349,12.8306874 L8.9512614,12.8306874 C8.67511903,12.8306874 8.4512614,13.054545 8.4512614,13.3306874 C8.4512614,13.448999 8.49321518,13.5634776 8.56966458,13.6537723 L11.5377874,17.1594334 C11.7162223,17.3701835 12.0317191,17.3963802 12.2424692,17.2179453 C12.2635563,17.2000915 12.2831273,17.1805206 12.3009811,17.1594334 L15.2691039,13.6537723 C15.4475388,13.4430222 15.4213421,13.1275254 15.210592,12.9490905 C15.1202973,12.8726411 15.0058187,12.8306874 14.8875071,12.8306874 Z"
+                            fill="#000000" />
+                        </g>
+                      </svg><!--end::Svg Icon--></span>
+                    Entrada</a>
+
+                  <a class="btn btn-light-info font-weight-bolder mr-2" [routerLink]="['/inventario/general']">
+                    <span
+                      class="svg-icon svg-icon-md"><!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo1/dist/../src/media/svg/icons/Files/Downloads-folder.svg--><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                        height="24px" viewBox="0 0 24 24" version="1.1">
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <rect x="0" y="0" width="24" height="24" />
+                          <path
+                            d="M3.5,21 L20.5,21 C21.3284271,21 22,20.3284271 22,19.5 L22,8.5 C22,7.67157288 21.3284271,7 20.5,7 L10,7 L7.43933983,4.43933983 C7.15803526,4.15803526 6.77650439,4 6.37867966,4 L3.5,4 C2.67157288,4 2,4.67157288 2,5.5 L2,19.5 C2,20.3284271 2.67157288,21 3.5,21 Z"
+                            fill="#000000" opacity="0.3" />
+                          <path
+                            d="M14.8875071,12.8306874 L12.9310336,12.8306874 L12.9310336,10.8230161 C12.9310336,10.5468737 12.707176,10.3230161 12.4310336,10.3230161 L11.4077349,10.3230161 C11.1315925,10.3230161 10.9077349,10.5468737 10.9077349,10.8230161 L10.9077349,12.8306874 L8.9512614,12.8306874 C8.67511903,12.8306874 8.4512614,13.054545 8.4512614,13.3306874 C8.4512614,13.448999 8.49321518,13.5634776 8.56966458,13.6537723 L11.5377874,17.1594334 C11.7162223,17.3701835 12.0317191,17.3963802 12.2424692,17.2179453 C12.2635563,17.2000915 12.2831273,17.1805206 12.3009811,17.1594334 L15.2691039,13.6537723 C15.4475388,13.4430222 15.4213421,13.1275254 15.210592,12.9490905 C15.1202973,12.8726411 15.0058187,12.8306874 14.8875071,12.8306874 Z"
+                            fill="#000000" />
+                        </g>
+                      </svg><!--end::Svg Icon--></span>
+                    General</a>
+                  <!--begin::Dropdown-->
+                  <div class="dropdown dropdown-inline mr-2">
+                    <button type="button" class="btn btn-light-primary font-weight-bolder dropdown-toggle"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="svg-icon svg-icon-md">
+                        <!--begin::Svg Icon | path:assets/media/svg/icons/Design/PenAndRuller.svg-->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                          height="24px" viewBox="0 0 24 24" version="1.1">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <rect x="0" y="0" width="24" height="24" />
+                            <path
+                              d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z"
+                              fill="#000000" opacity="0.3" />
+                            <path
+                              d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z"
+                              fill="#000000" />
+                          </g>
+                        </svg>
+                        <!--end::Svg Icon-->
+                      </span>Exportar</button>
+                    <!--begin::Dropdown Menu-->
+                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                      <!--begin::Navigation-->
+                      <ul class="navi flex-column navi-hover py-2">
+                        <li class="navi-item">
+                          <a style="cursor:pointer;" (click)="downloadExcel()" class="navi-link">
+                            <span class="navi-icon">
+                              <i class="la la-file-excel-o"></i>
+                            </span>
+                            <span class="navi-text">Excel</span>
+                          </a>
+                        </li>
+                        <li class="navi-item">
+                          <a style="cursor:pointer;" (click)="toCSV()" class="navi-link">
+                            <span class="navi-icon">
+                              <i class="la la-file-text-o"></i>
+                            </span>
+                            <span class="navi-text">CSV</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--end::Navigation-->
+                    </div>
+                    <!--end::Dropdown Menu-->
+                  </div>
+
+
+
+                </div>
+              </div>
+              <div class="card-body">
+                <!--begin: Search Form-->
+                <!--begin::Search Form-->
+                <div class="mb-7">
+                  <div class="row align-items-center">
+                    <div class="col-lg-9 col-xl-8">
+                      <div class="row align-items-center">
+                        <div class="col-md-6 my-2 my-md-0">
+                          <div class="d-flex align-items-center">
+                            <label class="mr-3 mb-0 d-none d-md-block">Año:</label>
+                            <select class="form-control" name="filtro_tipo" [(ngModel)]="filtro_year">
+                              <option value="" selected disabled>Seleccionar</option>
+                              <option value="2022">2022</option>
+                              <option value="2023">2023</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6 my-2 my-md-0">
+                          <div class="d-flex align-items-center">
+                            <label class="mr-3 mb-0 d-none d-md-block">Mes:</label>
+                            <select class="form-control" id="kt_datatable_search_type" name="filtro_categoria"
+                              [(ngModel)]="filtro_month">
+                              <option value="" selected disabled>Seleccionar</option>
+                              <option value="1">Enero</option>
+                              <option value="2">Febrero</option>
+                              <option value="3">Marzo</option>
+                              <option value="4">Abril</option>
+                              <option value="5">Mayo</option>
+                              <option value="6">Junio</option>
+                              <option value="7">Julio</option>
+                              <option value="8">Agosto</option>
+                              <option value="9">Septiembre</option>
+                              <option value="10">Octubre</option>
+                              <option value="11">Noviembre</option>
+                              <option value="12">Diciembre</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-xl-4 mt-5 mt-lg-0">
+                      <a style="cursor:pointer" class="btn btn-light-primary px-6 font-weight-bold mr-3"
+                        (click)="search()"><i class="flaticon-search" style="padding-right: 0px;"></i></a>
+
+                      <a style="cursor:pointer" class="btn btn-light-primary px-6 font-weight-bold"
+                        (click)="refresh()"><i class="flaticon2-refresh-button" style="padding-right: 0px;"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!--end::Search Form-->
+                <!--end: Search Form-->
+                <!--begin: Datatable-->
+                <table class="table table-separate table-head-custom table-foot-custom table-checkable"
+                  id="kt_datatable">
+                  <thead>
+                    <tr>
+                      <th>SKU</th>
+                      <th>Producto</th>
+                      <th>Variedad</th>
+                      <th>Venta</th>
+                      <th>Cantidad</th>
+                      <th>Precio unidad</th>
+                      <th>Subtotal</th>
+                      <th>Fecha Ingreso</th>
+                    </tr>
+                  </thead>
+                  <ng-container *ngIf="load_data">
+                    <tbody>
+                      <tr>
+                        <td class="text-center" colspan="7">
+                          <div class="spinner-border" style="width: 3rem; height: 3rem" role="status">
+                            <span class="sr-only">Loading...</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </ng-container>
+                  <ng-container *ngIf="!load_data">
+                    <ng-container *ngIf="inventario.length>=1">
+                      <tbody *ngFor="let item of inventario | slice
+                      : (page - 1) * pageSize
+                      : (page - 1) * pageSize + pageSize">
+                        <tr>
+                          <td><b>{{item.sku}}</b></td>
+                          <td>{{item.producto}}</td>
+                          <td>{{item.variedad}}</td>
+                          <td>{{item.venta}}</td>
+                          <td>
+                            <span class="text-danger"><b>-{{item.cantidad}}</b></span>
+                          </td>
+                          <td>
+                            <span *ngIf="item.precio >= 1"><b>{{item.precio|currency:'USD'}}</b></span>
+                            <span *ngIf="item.precio == 0"
+                              class="text-danger"><b>{{item.precio|currency:'USD'}}</b></span>
+                          </td>
+                          <td><b>{{item.subtotal|currency:'USD'}}</b></td>
+                          <td>{{item.fecha|date}}</td>
+                        </tr>
+                      </tbody>
+                    </ng-container>
+                    <ng-container *ngIf="inventario.length==0">
+                      <tbody>
+                        <td colspan="7" class="text-center">
+                          <p class="font-size-h3 text-muted font-weight-normal mt-5">
+                            No hay ningun registro que mostrar.
+                          </p>
+                        </td>
+                      </tbody>
+                    </ng-container>
+                  </ng-container>
+                  <tfoot>
+                    <tr>
+                      <th>SKU</th>
+                      <th>Producto</th>
+                      <th>Variedad</th>
+                      <th>Venta</th>
+                      <th>Cantidad</th>
+                      <th>Precio unidad</th>
+                      <th>Subtotal</th>
+                      <th>Fecha Ingreso</th>
+                    </tr>
+                  </tfoot>
+                </table>
+
+                <ng-container *ngIf="inventario.length >=1">
+                  <div class="col-12" style="padding-left: 0px; margin-top: 12px">
+                    <ngb-pagination [collectionSize]="inventario.length" [pageSize]="pageSize" [(page)]="page"
+                      [maxSize]="10" [rotate]="true" [boundaryLinks]="true"></ngb-pagination>
+                  </div>
+                </ng-container>
+                <!--end: Datatable-->
+              </div>
+            </div>
+            <!--end::Card-->
+          </div>
+          <!--end::Container-->
+        </div>
+      </div>
+      <!--end::Content-->
+    </div>
+  </div>
+</div>
