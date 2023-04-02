@@ -2,7 +2,7 @@ const SibApiV3Sdk = require('sib-api-v3-sdk');
 let defaultClient = SibApiV3Sdk.ApiClient.instance;
 
 let apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey = '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';
+apiKey.apiKey = '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';
 
 const obtener_listas_contactos = async function (req, res) {
 
