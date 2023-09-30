@@ -2,7 +2,7 @@ const SibApiV3Sdk = require('sib-api-v3-sdk');
 let defaultClient = SibApiV3Sdk.ApiClient.instance;
 
 let apiKey = defaultClient.authentications['api-key'];
-apiKey.apiKey = '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';
+apiKey.apiKey = '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';
 
 const obtener_listas_contactos = async function (req, res) {
 
@@ -342,6 +342,7 @@ module.exports = {
     importar_contactos,
     obtener_contactos_lista,
     obtener_campaings,
+    obtener_detalle_lista,
     obtener_one_campaign,
     crear_campaign,
     editar_campaign,
